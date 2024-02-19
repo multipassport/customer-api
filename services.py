@@ -13,7 +13,7 @@ def get_customer(db: Session, customer_id: int):
 
 
 def get_customers(db: Session):
-    return db.query(Customer).all()
+    return db.query(Customer).order_by(Customer.id.asc())
 
 
 def create_customer(db: Session, customer: CustomerBase):

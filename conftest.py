@@ -42,3 +42,18 @@ def app_client(cleanup_db):
 @pytest.fixture()
 def customer():
     yield CustomerFactory()
+
+
+@pytest.fixture()
+def customer2():
+    yield CustomerFactory()
+
+
+@pytest.fixture()
+def customer_body():
+    return {
+        "name": "Jane Doe",
+        "address": "London",
+        "age": 12,
+        "description": "Lorem ipsum dolorem est",
+    }

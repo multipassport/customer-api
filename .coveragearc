@@ -1,10 +1,6 @@
 [run]
 branch = True
-omit =
-    migration/
-    conftest.py
-    factories.py
-    tests.py
+
 
 [report]
 fail_under = 60
