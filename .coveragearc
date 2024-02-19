@@ -1,0 +1,7 @@
+[run]
+branch = True
+
+
+[report]
+fail_under = 60
+skip_empty = True
