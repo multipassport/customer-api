@@ -26,5 +26,13 @@ services:
       postgres:
         condition: service_healthy
 
+  tests:
+    build:
+      context: .
+      dockerfile: Dockerfile-test
+    depends_on:
+      postgres:
+        condition: service_healthy
+
 volumes:
   pg_data:

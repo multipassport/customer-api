@@ -8,4 +8,4 @@ class Settings(BaseSettings):
     POSTGRES_DB: str
 
     class Config:
-        env_file = ".env"
+        env_file = '.env'
